@@ -7,7 +7,7 @@ const holidays = ['正月', '成人の日', '建国記念日', '天皇誕生日'
 
  // while文を利用した場合
 let i = 0;
-while (i < holidays.lenght) {
+while (i < holidays.length) {
     console.log(holidays[i]);
     i++;
 }
