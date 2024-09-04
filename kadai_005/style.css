@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+ color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*ヘッダーのレイアウト */
+header {
+  padding: 20px 20px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+/* MY PROFILEの部分 */
+.nav-left {
+  border: solid 1px black;
+
+  margin-left: 20px;
+}
+
+/* ナビゲーションメニュー */
+.nav-right {
+  padding-right: 20px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.nav-right > a {
+  padding-left: 30px;
+}
+#nav a {
+  text-decoration: none;  
+  color: #000000;
+}
+
+#nav a:visited {
+  color: #000000;
+}
+
+#nav a:hover {
+  color: #000000;
+}
+
+#nav a:active {
+  color: #000000;
+}
+
+
+/* メインビジュアル */
+#main-visual {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  position: relative;
+} 
+
+#main-visual img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+/* bodyセクション */
+
+/* アバウトセクション */
+#about {
+  padding: 20px;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 34px;
+  margin: 50px auto;
+}
+
+#about-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+/* 左のカラム */
+#about-left img {
+  flex: 1;
+  max-width: 100%;
+  margin: 10px 80px 10px 150px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* 右のカラム */
+#about-right {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* プロフィールの文字サイズ */
+#about-right h3 { 
+  font-size: 24px;   
+  font-weight: bold;
+}
+
+#about-right p {
+  font-size: 22px ;
+}
+
+
+/* ワークスセクション */
+#works h2 {
+  font-size: 34px;
+  text-align: center;
+  margin: 50px;
+}
+
+#works-contents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 10px 30px;
+}
+
+#works img {
+  width: 100%;
+  height: auto;
+  width: 25%;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+#works p {
+  font-size: 18px;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+/* フッター */
+footer {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 770px) {
+  body {
+    display: block;
+  }
+
+/* ナビゲーション */
+#nav {
+  font-size: 26px;
+}
+
+.nav-right > a {
+  padding-left: 10px;
+}
+
+/* メインビジュアル */
+#main-visual {
+  width: 100%;
+  height: auto;
+}
+
+/* アバウトセクション */
+#about-contents {
+  flex-direction: column;
+  align-items: center;
+}
+
+#about img {
+  margin: 0 auto;
+}
+#about h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 25px auto;
+}
+
+/* ワークスセクション */
+#works-contents {
+  flex-direction: column;
+  align-items: center;
+}
+
+#works h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 35px 0px 10px 0px;
+}
+
+#works1, #works2, #works3 {
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+}
